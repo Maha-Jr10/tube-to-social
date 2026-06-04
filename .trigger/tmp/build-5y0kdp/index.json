@@ -1,0 +1,218 @@
+{
+  "configPath": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-5y0kdp\\trigger.config.mjs",
+  "customConditions": [
+  ],
+  "prompts": [
+  ],
+  "queues": [
+  ],
+  "runtime": "node",
+  "runtimeVersion": "22.20.0",
+  "tasks": [
+    {
+      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-5y0kdp\\post-newsletter.mjs",
+      "filePath": "src/trigger/content-os/publisher/post-newsletter.ts",
+      "id": "post-newsletter",
+      "maxDuration": 600,
+      "retry": {
+        "factor": 2,
+        "maxAttempts": 3,
+        "maxTimeoutInMs": 30000,
+        "minTimeoutInMs": 5000,
+        "randomize": true
+      }
+    },
+    {
+      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-5y0kdp\\post-x.mjs",
+      "filePath": "src/trigger/content-os/publisher/post-x.ts",
+      "id": "post-x",
+      "maxDuration": 600,
+      "retry": {
+        "factor": 2,
+        "maxAttempts": 3,
+        "maxTimeoutInMs": 30000,
+        "minTimeoutInMs": 5000,
+        "randomize": true
+      }
+    },
+    {
+      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-5y0kdp\\schedule-posts.mjs",
+      "filePath": "src/trigger/content-os/publisher/schedule-posts.ts",
+      "id": "schedule-posts",
+      "maxDuration": 600,
+      "retry": {
+        "factor": 2,
+        "maxAttempts": 3,
+        "maxTimeoutInMs": 30000,
+        "minTimeoutInMs": 5000
+      }
+    },
+    {
+      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-5y0kdp\\research-agent.mjs",
+      "filePath": "src/trigger/content-os/research-agent.ts",
+      "id": "research-agent",
+      "maxDuration": 600,
+      "retry": {
+        "factor": 2,
+        "maxAttempts": 3,
+        "maxTimeoutInMs": 30000,
+        "minTimeoutInMs": 5000,
+        "randomize": true
+      }
+    },
+    {
+      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-5y0kdp\\strategy-agent.mjs",
+      "filePath": "src/trigger/content-os/strategy-agent.ts",
+      "id": "strategy-agent",
+      "maxDuration": 600,
+      "retry": {
+        "factor": 2,
+        "maxAttempts": 3,
+        "maxTimeoutInMs": 30000,
+        "minTimeoutInMs": 5000,
+        "randomize": true
+      }
+    },
+    {
+      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-5y0kdp\\copywriter-agent.mjs",
+      "filePath": "src/trigger/content-os/copywriter-agent.ts",
+      "id": "copywriter-agent",
+      "maxDuration": 600,
+      "retry": {
+        "factor": 2,
+        "maxAttempts": 2,
+        "maxTimeoutInMs": 60000,
+        "minTimeoutInMs": 10000,
+        "randomize": true
+      }
+    },
+    {
+      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-5y0kdp\\orchestrator.mjs",
+      "filePath": "src/trigger/content-os/orchestrator.ts",
+      "id": "content-os-orchestrator",
+      "maxDuration": 600,
+      "payloadSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "additionalProperties": false,
+        "properties": {
+          "brand": {
+            "additionalProperties": false,
+            "properties": {
+              "accentColor": {
+                "default": "#F59E0B",
+                "type": "string"
+              },
+              "ctaUrl": {
+                "default": "",
+                "type": "string"
+              },
+              "fontFamily": {
+                "default": "Inter, sans-serif",
+                "type": "string"
+              },
+              "handle": {
+                "default": "",
+                "type": "string"
+              },
+              "name": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "niche": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "primaryColor": {
+                "default": "#2563EB",
+                "type": "string"
+              },
+              "targetAudience": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "tone": {
+                "default": "professional but approachable",
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "niche",
+              "targetAudience"
+            ],
+            "type": "object"
+          },
+          "videoUrl": {
+            "format": "uri",
+            "type": "string"
+          }
+        },
+        "required": [
+          "videoUrl",
+          "brand"
+        ],
+        "type": "object"
+      },
+      "retry": {
+        "factor": 2,
+        "maxAttempts": 1,
+        "maxTimeoutInMs": 60000,
+        "minTimeoutInMs": 1000,
+        "randomize": true
+      }
+    },
+    {
+      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-5y0kdp\\post-facebook.mjs",
+      "filePath": "src/trigger/content-os/publisher/post-facebook.ts",
+      "id": "post-facebook",
+      "maxDuration": 600,
+      "retry": {
+        "factor": 2,
+        "maxAttempts": 3,
+        "maxTimeoutInMs": 30000,
+        "minTimeoutInMs": 5000,
+        "randomize": true
+      }
+    },
+    {
+      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-5y0kdp\\post-instagram.mjs",
+      "filePath": "src/trigger/content-os/publisher/post-instagram.ts",
+      "id": "post-instagram",
+      "maxDuration": 600,
+      "retry": {
+        "factor": 2,
+        "maxAttempts": 3,
+        "maxTimeoutInMs": 30000,
+        "minTimeoutInMs": 5000,
+        "randomize": true
+      }
+    },
+    {
+      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-5y0kdp\\post-linkedin.mjs",
+      "filePath": "src/trigger/content-os/publisher/post-linkedin.ts",
+      "id": "post-linkedin",
+      "maxDuration": 600,
+      "retry": {
+        "factor": 2,
+        "maxAttempts": 3,
+        "maxTimeoutInMs": 30000,
+        "minTimeoutInMs": 5000,
+        "randomize": true
+      }
+    }
+  ],
+  "timings": {
+    "src/lib/image-generator.ts": 1.2052999999999656,
+    "src/trigger/content-os/copywriter-agent.ts": 1.9738999999999578,
+    "src/trigger/content-os/orchestrator.ts": 3.4992999999999483,
+    "src/trigger/content-os/publisher/post-facebook.ts": 1.084600000000023,
+    "src/trigger/content-os/publisher/post-instagram.ts": 1.1013000000000375,
+    "src/trigger/content-os/publisher/post-linkedin.ts": 0.9609000000000378,
+    "src/trigger/content-os/publisher/post-newsletter.ts": 1.4950999999999794,
+    "src/trigger/content-os/publisher/post-x.ts": 18.841000000000008,
+    "src/trigger/content-os/publisher/schedule-posts.ts": 2.164800000000014,
+    "src/trigger/content-os/research-agent.ts": 14.802099999999939,
+    "src/trigger/content-os/strategy-agent.ts": 2.0475999999999885
+  },
+  "workerEntryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-5y0kdp\\dev-run-worker.mjs"
+}
