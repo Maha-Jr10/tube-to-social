@@ -1,5 +1,5 @@
 {
-  "configPath": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-5y0kdp\\trigger.config.mjs",
+  "configPath": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-4jfcGL\\trigger.config.mjs",
   "customConditions": [
   ],
   "prompts": [
@@ -10,7 +10,7 @@
   "runtimeVersion": "22.20.0",
   "tasks": [
     {
-      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-5y0kdp\\post-newsletter.mjs",
+      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-4jfcGL\\post-newsletter.mjs",
       "filePath": "src/trigger/content-os/publisher/post-newsletter.ts",
       "id": "post-newsletter",
       "maxDuration": 600,
@@ -23,7 +23,7 @@
       }
     },
     {
-      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-5y0kdp\\post-x.mjs",
+      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-4jfcGL\\post-x.mjs",
       "filePath": "src/trigger/content-os/publisher/post-x.ts",
       "id": "post-x",
       "maxDuration": 600,
@@ -36,7 +36,7 @@
       }
     },
     {
-      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-5y0kdp\\schedule-posts.mjs",
+      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-4jfcGL\\schedule-posts.mjs",
       "filePath": "src/trigger/content-os/publisher/schedule-posts.ts",
       "id": "schedule-posts",
       "maxDuration": 600,
@@ -48,7 +48,7 @@
       }
     },
     {
-      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-5y0kdp\\research-agent.mjs",
+      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-4jfcGL\\research-agent.mjs",
       "filePath": "src/trigger/content-os/research-agent.ts",
       "id": "research-agent",
       "maxDuration": 600,
@@ -61,7 +61,7 @@
       }
     },
     {
-      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-5y0kdp\\strategy-agent.mjs",
+      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-4jfcGL\\strategy-agent.mjs",
       "filePath": "src/trigger/content-os/strategy-agent.ts",
       "id": "strategy-agent",
       "maxDuration": 600,
@@ -74,7 +74,7 @@
       }
     },
     {
-      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-5y0kdp\\copywriter-agent.mjs",
+      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-4jfcGL\\copywriter-agent.mjs",
       "filePath": "src/trigger/content-os/copywriter-agent.ts",
       "id": "copywriter-agent",
       "maxDuration": 600,
@@ -87,7 +87,7 @@
       }
     },
     {
-      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-5y0kdp\\orchestrator.mjs",
+      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-4jfcGL\\orchestrator.mjs",
       "filePath": "src/trigger/content-os/orchestrator.ts",
       "id": "content-os-orchestrator",
       "maxDuration": 600,
@@ -162,7 +162,7 @@
       }
     },
     {
-      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-5y0kdp\\post-facebook.mjs",
+      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-4jfcGL\\post-facebook.mjs",
       "filePath": "src/trigger/content-os/publisher/post-facebook.ts",
       "id": "post-facebook",
       "maxDuration": 600,
@@ -175,7 +175,7 @@
       }
     },
     {
-      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-5y0kdp\\post-instagram.mjs",
+      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-4jfcGL\\post-instagram.mjs",
       "filePath": "src/trigger/content-os/publisher/post-instagram.ts",
       "id": "post-instagram",
       "maxDuration": 600,
@@ -188,7 +188,7 @@
       }
     },
     {
-      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-5y0kdp\\post-linkedin.mjs",
+      "entryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-4jfcGL\\post-linkedin.mjs",
       "filePath": "src/trigger/content-os/publisher/post-linkedin.ts",
       "id": "post-linkedin",
       "maxDuration": 600,
@@ -202,17 +202,17 @@
     }
   ],
   "timings": {
-    "src/lib/image-generator.ts": 1.2052999999999656,
-    "src/trigger/content-os/copywriter-agent.ts": 1.9738999999999578,
-    "src/trigger/content-os/orchestrator.ts": 3.4992999999999483,
-    "src/trigger/content-os/publisher/post-facebook.ts": 1.084600000000023,
-    "src/trigger/content-os/publisher/post-instagram.ts": 1.1013000000000375,
-    "src/trigger/content-os/publisher/post-linkedin.ts": 0.9609000000000378,
-    "src/trigger/content-os/publisher/post-newsletter.ts": 1.4950999999999794,
-    "src/trigger/content-os/publisher/post-x.ts": 18.841000000000008,
-    "src/trigger/content-os/publisher/schedule-posts.ts": 2.164800000000014,
-    "src/trigger/content-os/research-agent.ts": 14.802099999999939,
-    "src/trigger/content-os/strategy-agent.ts": 2.0475999999999885
+    "src/lib/image-generator.ts": 2.8566000000000713,
+    "src/trigger/content-os/copywriter-agent.ts": 5.308999999999969,
+    "src/trigger/content-os/orchestrator.ts": 8.548299999999927,
+    "src/trigger/content-os/publisher/post-facebook.ts": 2.524099999999862,
+    "src/trigger/content-os/publisher/post-instagram.ts": 2.850099999999884,
+    "src/trigger/content-os/publisher/post-linkedin.ts": 2.7314000000001215,
+    "src/trigger/content-os/publisher/post-newsletter.ts": 4.201500000000124,
+    "src/trigger/content-os/publisher/post-x.ts": 37.03520000000003,
+    "src/trigger/content-os/publisher/schedule-posts.ts": 4.981099999999969,
+    "src/trigger/content-os/research-agent.ts": 31.633599999999888,
+    "src/trigger/content-os/strategy-agent.ts": 4.7427000000000135
   },
-  "workerEntryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-5y0kdp\\dev-run-worker.mjs"
+  "workerEntryPoint": "D:\\desk\\tutorials\\Agentic_AI\\AI_Automation\\trigger_demo\\.trigger\\tmp\\build-4jfcGL\\dev-run-worker.mjs"
 }

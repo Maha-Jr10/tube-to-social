@@ -1,4 +1,4 @@
-# Content OS
+# TubePost
 
 A fully automated content engine that turns a single YouTube video into 30 days of scheduled social media posts and a newsletter broadcast — running as durable background jobs on Trigger.dev.
 
