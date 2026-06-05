@@ -1,5 +1,3 @@
-import { YoutubeTranscript } from "youtube-transcript";
-
 const MAX_TRANSCRIPT_CHARS = 12000;
 
 export function extractVideoId(url: string): string {
@@ -22,25 +20,35 @@ export function extractVideoId(url: string): string {
 }
 
 export async function fetchTranscript(videoId: string): Promise<string> {
-  let items;
+  const apiKey = process.env.SUPADATA_API_KEY;
+  if (!apiKey) throw new Error("SUPADATA_API_KEY is not set");
+
+  let res: Response;
   try {
-    items = await YoutubeTranscript.fetchTranscript(videoId);
+    res = await fetch(`https://api.supadata.ai/v1/youtube/transcript?videoId=${videoId}&text=true`, {
+      headers: { "x-api-key": apiKey },
+    });
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err);
+    throw new Error(`Network error fetching transcript for ${videoId}: ${msg}`);
+  }
+
+  if (!res.ok) {
+    const body = await res.text().catch(() => "");
     throw new Error(
       `Could not fetch transcript for video ${videoId}. ` +
-        `The video may have no captions, be private, or age-restricted. Details: ${msg}`
+        `The video may have no captions, be private, or age-restricted. Status: ${res.status}. ${body}`
     );
   }
 
-  if (!items || items.length === 0) {
-    throw new Error(`No transcript segments returned for video ${videoId}`);
+  const data = (await res.json()) as { content: string };
+
+  if (!data.content) {
+    throw new Error(`No transcript returned for video ${videoId}`);
   }
 
-  const full = items
-    .map((item) => item.text)
-    .join(" ")
-    .replace(/\[.*?\]/g, "") // strip caption annotations like [Music]
+  const full = data.content
+    .replace(/\[.*?\]/g, "")
     .replace(/\s+/g, " ")
     .trim();
 
